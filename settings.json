@@ -12,6 +12,8 @@
     "editor.detectIndentation": false,
     "editor.insertSpaces": true,
     "editor.tabSize": 4,
+    // Высота вкладок (открытых файлов)
+    "window.density.editorTabHeight": "compact",
     
     "editor.lineHeight": 24,
     "editor.stickyScroll.enabled": false,

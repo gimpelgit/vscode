@@ -1,0 +1,59 @@
+{
+    "main": {
+        "prefix": "main",
+        "body": [
+            "def ${1:main}():",
+            "    ${0:pass}",
+            "",
+            "",
+            "if __name__ == '__main__':",
+            "    ${1:main}()"
+        ],
+        "description": "main file"
+    },
+
+    "test": {
+        "prefix": "test",
+        "body": [
+            "import unittest",
+            "from customcolor import ColorTestRunner",
+            "",
+            "",
+            "class Test${1:Sum}(unittest.TestCase):",
+            "    def test_${2:empty}(self):",
+            "        ${0:pass}",
+            "",
+            "",
+            "if __name__ == '__main__':",
+            "    unittest.main(testRunner=ColorTestRunner(verbosity=2))"
+        ],
+        "description": "test file"
+    },
+
+    "ntest": {
+        "prefix": "ntest",
+        "body": [
+            "def test_${1:empty}(self):",
+            "    ${0:pass}"
+        ],
+        "description": "new unittest"
+    },
+
+    "fori": {
+        "prefix": "fori",
+        "body": [
+            "for i in range(${1:number}):",
+            "    ${0:pass}"
+        ],
+        "description": "repeat several times"
+    },
+
+    "forli": {
+        "prefix": "forli",
+        "body": [
+            "for i in range(len(${1:li})):",
+            "    ${0:pass}"
+        ],
+        "description": "to run down the list of indexes"
+    }
+}

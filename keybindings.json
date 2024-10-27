@@ -1,0 +1,20 @@
+[
+    {
+        "key": "shift+alt+t",
+        "command": "workbench.action.toggleMaximizedPanel"
+    },
+    {
+        "key": "alt+r",
+        "command": "python.execInTerminal"
+    },
+    {
+        "key": "a",
+        "command": "explorer.newFile",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "shift+a",
+        "command": "explorer.newFolder",
+        "when": "filesExplorerFocus && !inputFocus"
+    }
+]
