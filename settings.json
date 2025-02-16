@@ -2,13 +2,17 @@
     "files.encoding": "utf8",
     "files.autoGuessEncoding": false,
     "files.autoSave": "afterDelay",
+    "update.mode": "none",
+    
     "git.ignoreMissingGitWarning": true,
     "git.openRepositoryInParentFolders": "never",
-    "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "newUntitledFile",
-    "window.zoomLevel": 1,
+    "workbench.iconTheme": "material-icon-theme",
+    "window.zoomLevel": 2,
+    // На linux убирает бесполезную верхнюю строку заголовка
+    "window.titleBarStyle": "custom",
     // Высота вкладок (открытых файлов)
-    "window.density.editorTabHeight": "compact",
+    "window.density.editorTabHeight": "default", // "compact" or "default"
     "editor.fontSize": 17,
     "editor.smoothScrolling": true,
     "editor.minimap.enabled": false,
@@ -16,6 +20,8 @@
     "editor.detectIndentation": false,
     "editor.insertSpaces": true,
     "editor.tabSize": 4,
+    // Отображение подсказок при наведении (не при написании)
+    "editor.hover.enabled": true,
     
     "editor.lineHeight": 24,
     "editor.stickyScroll.enabled": false,
@@ -28,9 +34,12 @@
     "explorer.confirmDragAndDrop": false,
     "security.workspace.trust.enabled": false,
     "breadcrumbs.enabled": false,
-    "cph.general.autoShowJudge": false,
+    "chat.commandCenter.enabled": false,
+
     "terminal.integrated.enableMultiLinePasteWarning": "never",
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "terminal.integrated.defaultProfile.linux": "bash",
+
     "cmake.configureOnOpen": false,
     "cmake.pinnedCommands": [
         "workbench.action.tasks.configureTaskRunner",
