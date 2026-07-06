@@ -4,7 +4,8 @@
   "files.autoSave": "afterDelay",
   // Предложение обновить версию VS Code
   "update.mode": "none",
-  
+  "telemetry.telemetryLevel": "off",
+
   "git.ignoreMissingGitWarning": true,
   "git.openRepositoryInParentFolders": "never",
   "workbench.startupEditor": "newUntitledFile",
@@ -38,6 +39,8 @@
   "diffEditor.hideUnchangedRegions.enabled": true,
   "redhat.telemetry.enabled": false,
   "java.inlayHints.parameterNames.enabled": "none",
+  // При переключении между вкладками проводник не будет перемещаться
+  "explorer.autoReveal": "focusNoScroll",
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "security.workspace.trust.enabled": false,
@@ -65,8 +68,14 @@
     "[Default Dark Modern]": {
       "rules": {
         "variable.readonly": "#9CDCFE",
-        "variable.defaultLibrary": "#4EC9B0",
+        "variable.defaultLibrary": "#4EC9B0"
       }
     }
   },
+  "workbench.colorCustomizations": {
+    "[Visual Studio Dark - C++]": {
+      "statusBar.background": "#1e1e1e",
+      "statusBar.foreground": "#ffffff"
+    }
+  }
 }
